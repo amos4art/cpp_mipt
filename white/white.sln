@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2_num_div", "2_num_div\2_nu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "discount", "discount\discount.vcxproj", "{CDC30D1B-ECC3-47DE-9001-B22C78B155D4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "select_even_num", "select_even_num\select_even_num.vcxproj", "{6F5A0DCD-136F-4C14-B963-0CBD4B9CE94C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{CDC30D1B-ECC3-47DE-9001-B22C78B155D4}.Release|x64.Build.0 = Release|x64
 		{CDC30D1B-ECC3-47DE-9001-B22C78B155D4}.Release|x86.ActiveCfg = Release|Win32
 		{CDC30D1B-ECC3-47DE-9001-B22C78B155D4}.Release|x86.Build.0 = Release|Win32
+		{6F5A0DCD-136F-4C14-B963-0CBD4B9CE94C}.Debug|x64.ActiveCfg = Debug|x64
+		{6F5A0DCD-136F-4C14-B963-0CBD4B9CE94C}.Debug|x64.Build.0 = Debug|x64
+		{6F5A0DCD-136F-4C14-B963-0CBD4B9CE94C}.Debug|x86.ActiveCfg = Debug|Win32
+		{6F5A0DCD-136F-4C14-B963-0CBD4B9CE94C}.Debug|x86.Build.0 = Debug|Win32
+		{6F5A0DCD-136F-4C14-B963-0CBD4B9CE94C}.Release|x64.ActiveCfg = Release|x64
+		{6F5A0DCD-136F-4C14-B963-0CBD4B9CE94C}.Release|x64.Build.0 = Release|x64
+		{6F5A0DCD-136F-4C14-B963-0CBD4B9CE94C}.Release|x86.ActiveCfg = Release|Win32
+		{6F5A0DCD-136F-4C14-B963-0CBD4B9CE94C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
