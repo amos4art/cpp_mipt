@@ -8,7 +8,7 @@ int main(){
 	cin >> a >> b >> c;
 
 	if (a == 0 && b != 0) {
-		cout << -c / b;
+		cout << -c / b;  // if a is 0 then only one linear solution
 	}
 	else {
 		double right_part = (b*b) / (4 * a*a) - c / a;

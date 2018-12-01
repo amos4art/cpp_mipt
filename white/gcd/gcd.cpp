@@ -3,23 +3,48 @@
 using namespace std;
 
 int main() {
-	int a, b, limit, divisor;
+	int a, b;
+	int g = 1;
 	cin >> a >> b;
-
-	if (a < b) {
-		limit = a;
-	}
-	else {
-		limit = b;
+	
+	if (a == 0) {
+		cout << b;
+		return 0;
 	}
 
-	for (int i = 1; i <= limit; ++i) {
-		if (a % i == 0 && b % i == 0) {
-			divisor = i;
+	if (b == 0) {
+		cout << a;
+		return 0;
+	}
+
+	while (a % 2 == 0 && b % 2 == 0) {
+		a = double(a) / 2;
+		b = double(b) / 2;
+		g *= 2;
+	}
+
+	int u = a;
+	int v = b;
+
+	while (u != 0) {
+
+		if (u % 2 == 0) {
+			u = double(u) / 2;
+		}
+
+		if (v % 2 == 0) {
+			v = double(v) / 2;
+		}
+
+		if (u >= v) {
+			u -= v;
+		}
+		else {
+			v -= u;
 		}
 	}
-
-	cout << divisor;
-
+	
+	cout << g * v;
+	
 	return 0;
 }

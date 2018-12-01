@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{08051DC1-A405-4ACD-B474-DE15783FB8CE}</ProjectGuid>
-    <RootNamespace>binarynum</RootNamespace>
+    <ProjectGuid>{F695794E-40AF-4F6F-BD6A-D2BA20592DB0}</ProjectGuid>
+    <RootNamespace>palindrome</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,7 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="binary_num.cpp" />
+    <ClCompile Include="palindrome.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

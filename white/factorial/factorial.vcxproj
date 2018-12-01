@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{08051DC1-A405-4ACD-B474-DE15783FB8CE}</ProjectGuid>
-    <RootNamespace>binarynum</RootNamespace>
+    <ProjectGuid>{5A871176-37C9-4204-AC3D-FDA4A143C02A}</ProjectGuid>
+    <RootNamespace>factorial</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,7 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="binary_num.cpp" />
+    <ClCompile Include="factorial.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -10,8 +10,7 @@ int main() {
 		cout << "Impossible";
 	}
 	else {
-		int c = int(a / b);
-		cout << c;
+		cout << a / b;
 	}
 	
 	return 0;

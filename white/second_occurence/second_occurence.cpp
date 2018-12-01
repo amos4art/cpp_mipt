@@ -11,7 +11,7 @@ int main() {
 	for (int i = 0; i < s.size(); ++i) {
 		if (s[i] == 'f') {
 			++result;
-			if (result == 2) {
+			if (result == 0) {
 				result = i;
 				break;
 			}

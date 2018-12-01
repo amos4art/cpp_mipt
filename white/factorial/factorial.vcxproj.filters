@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="binary_num.cpp">
+    <ClCompile Include="factorial.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
