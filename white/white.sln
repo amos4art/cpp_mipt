@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "reverse_vector", "reverse_v
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "reverse_vector_2", "reverse_vector_2\reverse_vector_2.vcxproj", "{8BA0BB22-F0D5-4ED1-B624-91EAD94F2F10}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "avg_temp", "avg_temp\avg_temp.vcxproj", "{9040CC12-BFAE-484B-8BED-2BF948D85C75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -171,6 +173,14 @@ Global
 		{8BA0BB22-F0D5-4ED1-B624-91EAD94F2F10}.Release|x64.Build.0 = Release|x64
 		{8BA0BB22-F0D5-4ED1-B624-91EAD94F2F10}.Release|x86.ActiveCfg = Release|Win32
 		{8BA0BB22-F0D5-4ED1-B624-91EAD94F2F10}.Release|x86.Build.0 = Release|Win32
+		{9040CC12-BFAE-484B-8BED-2BF948D85C75}.Debug|x64.ActiveCfg = Debug|x64
+		{9040CC12-BFAE-484B-8BED-2BF948D85C75}.Debug|x64.Build.0 = Debug|x64
+		{9040CC12-BFAE-484B-8BED-2BF948D85C75}.Debug|x86.ActiveCfg = Debug|Win32
+		{9040CC12-BFAE-484B-8BED-2BF948D85C75}.Debug|x86.Build.0 = Debug|Win32
+		{9040CC12-BFAE-484B-8BED-2BF948D85C75}.Release|x64.ActiveCfg = Release|x64
+		{9040CC12-BFAE-484B-8BED-2BF948D85C75}.Release|x64.Build.0 = Release|x64
+		{9040CC12-BFAE-484B-8BED-2BF948D85C75}.Release|x86.ActiveCfg = Release|Win32
+		{9040CC12-BFAE-484B-8BED-2BF948D85C75}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
