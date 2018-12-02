@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{4F62D37D-0CD1-4061-869F-5DA596839AA1}</ProjectGuid>
-    <RootNamespace>queue</RootNamespace>
+    <ProjectGuid>{8E4AD463-B172-4D8C-9D86-07A7675E99CA}</ProjectGuid>
+    <RootNamespace>monthlytasks</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,7 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="queue.cpp" />
+    <ClCompile Include="monthly_tasks.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

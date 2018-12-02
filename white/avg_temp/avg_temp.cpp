@@ -4,6 +4,7 @@
 
 using namespace std;
 
+/*
 static int pow10(int n)
 {
 	static int p10[10] = {
@@ -21,6 +22,7 @@ void Reverse(vector<int>& v) {
 		v[v.size() - 1 - i] = tmp;
 	}
 }
+*/
 
 int main() {
 	int n, avg;
@@ -29,11 +31,21 @@ int main() {
 	string n_str, s;
 	vector<int> high_vector;
 
+	/*
 	getline(cin, n_str);
 	n = atoi(n_str.c_str());
-	
+	*/
+
+	cin >> n;
+
 	vector<int> temp(n);
 
+	for (int& t : temp) {
+		cin >> t;
+		summ += t;
+	}
+
+	/*
 	getline(cin, s);
 	   
 	for (auto& t : temp) {
@@ -52,10 +64,12 @@ int main() {
 		summ += t;
 	}
 
+	Reverse(temp);
+	*/
+
 	avg = summ / n;
 
-	Reverse(temp);
-	
+
 	for (int i = 0; i < temp.size(); ++i) {
 		if (temp[i] > avg) {
 			++high;

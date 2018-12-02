@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="queue.cpp">
+    <ClCompile Include="monthly_tasks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
