@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "queue", "queue\queue.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "monthly_tasks", "monthly_tasks\monthly_tasks.vcxproj", "{8E4AD463-B172-4D8C-9D86-07A7675E99CA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "anagrams", "anagrams\anagrams.vcxproj", "{A3C9B2D9-ADBC-4D0A-BBA4-FA1C24191EF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -201,6 +203,14 @@ Global
 		{8E4AD463-B172-4D8C-9D86-07A7675E99CA}.Release|x64.Build.0 = Release|x64
 		{8E4AD463-B172-4D8C-9D86-07A7675E99CA}.Release|x86.ActiveCfg = Release|Win32
 		{8E4AD463-B172-4D8C-9D86-07A7675E99CA}.Release|x86.Build.0 = Release|Win32
+		{A3C9B2D9-ADBC-4D0A-BBA4-FA1C24191EF1}.Debug|x64.ActiveCfg = Debug|x64
+		{A3C9B2D9-ADBC-4D0A-BBA4-FA1C24191EF1}.Debug|x64.Build.0 = Debug|x64
+		{A3C9B2D9-ADBC-4D0A-BBA4-FA1C24191EF1}.Debug|x86.ActiveCfg = Debug|Win32
+		{A3C9B2D9-ADBC-4D0A-BBA4-FA1C24191EF1}.Debug|x86.Build.0 = Debug|Win32
+		{A3C9B2D9-ADBC-4D0A-BBA4-FA1C24191EF1}.Release|x64.ActiveCfg = Release|x64
+		{A3C9B2D9-ADBC-4D0A-BBA4-FA1C24191EF1}.Release|x64.Build.0 = Release|x64
+		{A3C9B2D9-ADBC-4D0A-BBA4-FA1C24191EF1}.Release|x86.ActiveCfg = Release|Win32
+		{A3C9B2D9-ADBC-4D0A-BBA4-FA1C24191EF1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
