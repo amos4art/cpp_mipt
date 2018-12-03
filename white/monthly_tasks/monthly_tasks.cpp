@@ -4,10 +4,13 @@
 
 using namespace std;
 
+const vector<int> DAYS_IN_MONTHES = 
+{ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+const int MONTH_COUNT = DAYS_IN_MONTHES.size();
+
 int main() {
 	int q, d;
 	string operand, task;
-	vector<int> days_in_monthes = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 	
 	vector<vector<string>> tasks(31);
 	int curren_month = 0;
@@ -22,13 +25,11 @@ int main() {
 			tasks[d - 1].push_back(task);
 		}
 		else if (operand == "NEXT") {
-			++curren_month;
-			if (curren_month == days_in_monthes.size()) {
-				curren_month = 0;
-			}
+			curren_month = (curren_month + 1) % MONTH_COUNT;
+
 			vector<vector<string>> new_tasks(tasks);
 
-			new_tasks.resize(days_in_monthes[curren_month]);
+			new_tasks.resize(DAYS_IN_MONTHES[curren_month]);
 
 			if (new_tasks.size() < tasks.size()) {
 				for (int k = new_tasks.size(); k < tasks.size(); ++k) {

@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "monthly_tasks", "monthly_ta
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "anagrams", "anagrams\anagrams.vcxproj", "{A3C9B2D9-ADBC-4D0A-BBA4-FA1C24191EF1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "capital_dict", "capital_dict\capital_dict.vcxproj", "{3D927E4D-D057-42CF-962A-514D166A341F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -211,6 +213,14 @@ Global
 		{A3C9B2D9-ADBC-4D0A-BBA4-FA1C24191EF1}.Release|x64.Build.0 = Release|x64
 		{A3C9B2D9-ADBC-4D0A-BBA4-FA1C24191EF1}.Release|x86.ActiveCfg = Release|Win32
 		{A3C9B2D9-ADBC-4D0A-BBA4-FA1C24191EF1}.Release|x86.Build.0 = Release|Win32
+		{3D927E4D-D057-42CF-962A-514D166A341F}.Debug|x64.ActiveCfg = Debug|x64
+		{3D927E4D-D057-42CF-962A-514D166A341F}.Debug|x64.Build.0 = Debug|x64
+		{3D927E4D-D057-42CF-962A-514D166A341F}.Debug|x86.ActiveCfg = Debug|Win32
+		{3D927E4D-D057-42CF-962A-514D166A341F}.Debug|x86.Build.0 = Debug|Win32
+		{3D927E4D-D057-42CF-962A-514D166A341F}.Release|x64.ActiveCfg = Release|x64
+		{3D927E4D-D057-42CF-962A-514D166A341F}.Release|x64.Build.0 = Release|x64
+		{3D927E4D-D057-42CF-962A-514D166A341F}.Release|x86.ActiveCfg = Release|Win32
+		{3D927E4D-D057-42CF-962A-514D166A341F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
