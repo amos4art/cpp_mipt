@@ -18,5 +18,4 @@ int main() {
 	cout << str.size();
 
 	return 0;
-
 }

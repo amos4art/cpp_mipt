@@ -2,25 +2,27 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <set>
 
 using namespace std;
 
 int main() {
-	int q;
-	map<vector<string>, int> routes;
-	
+	int q;	
+	map<set<string>, int> routes;
+
 	cin >> q;
 
 	for (int i = 0; i < q; ++i) {
 		int stop_count;
 		cin >> stop_count;
-		vector<string> stops;
-		stops.resize(stop_count);
-
-		for (auto& stop : stops) {
+		set<string> stops;
+		
+		for (int i = 0; i < stop_count; ++i) {
+			string stop;
 			cin >> stop;
-		}		
-
+			stops.insert(stop);
+		}
+		
 		if (routes.count(stops) == 0) {
 			int s;
 			s = routes.size() + 1;
