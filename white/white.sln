@@ -85,6 +85,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lecture_title", "lecture_ti
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "func_invert", "func_invert\func_invert.vcxproj", "{0409E9BB-0B03-40A8-824C-A5FCE45DA678}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "func_invert_2", "func_invert_2\func_invert_2.vcxproj", "{E290A223-58D8-4CDF-83AF-244379528C6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -389,6 +391,14 @@ Global
 		{0409E9BB-0B03-40A8-824C-A5FCE45DA678}.Release|x64.Build.0 = Release|x64
 		{0409E9BB-0B03-40A8-824C-A5FCE45DA678}.Release|x86.ActiveCfg = Release|Win32
 		{0409E9BB-0B03-40A8-824C-A5FCE45DA678}.Release|x86.Build.0 = Release|Win32
+		{E290A223-58D8-4CDF-83AF-244379528C6B}.Debug|x64.ActiveCfg = Debug|x64
+		{E290A223-58D8-4CDF-83AF-244379528C6B}.Debug|x64.Build.0 = Debug|x64
+		{E290A223-58D8-4CDF-83AF-244379528C6B}.Debug|x86.ActiveCfg = Debug|Win32
+		{E290A223-58D8-4CDF-83AF-244379528C6B}.Debug|x86.Build.0 = Debug|Win32
+		{E290A223-58D8-4CDF-83AF-244379528C6B}.Release|x64.ActiveCfg = Release|x64
+		{E290A223-58D8-4CDF-83AF-244379528C6B}.Release|x64.Build.0 = Release|x64
+		{E290A223-58D8-4CDF-83AF-244379528C6B}.Release|x86.ActiveCfg = Release|Win32
+		{E290A223-58D8-4CDF-83AF-244379528C6B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -431,6 +441,7 @@ Global
 		{C163EE07-7F9A-4E8B-9C8B-9B14D82F9A46} = {5AE7DDB7-7C76-4CF5-9C35-B62470A1F5DD}
 		{B97F6C47-A262-42C2-8671-427365C50334} = {BD279266-5DFB-478A-9313-F54FAA73C220}
 		{0409E9BB-0B03-40A8-824C-A5FCE45DA678} = {BD279266-5DFB-478A-9313-F54FAA73C220}
+		{E290A223-58D8-4CDF-83AF-244379528C6B} = {BD279266-5DFB-478A-9313-F54FAA73C220}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7431C94E-8D7C-4ACD-B2AA-210C9DF97CBF}
