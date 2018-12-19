@@ -1,5 +1,7 @@
 #include <iostream>
 #include <sstream>
+#include <exception>
+
 using namespace std;
 
 int GDC(int a, int b) {
@@ -52,6 +54,9 @@ public:
 		denom = 1;
 	}
 	Rational(int numerator, int denominator) {
+		if (denominator == 0) {
+			throw invalid_argument("Invalid argument");
+		}
 		if (numerator == 0) {
 			num = 0;
 			denom = 1;
@@ -82,6 +87,27 @@ bool operator==(const Rational& lhs, const Rational& rhs) {
 	return (lhs.Numerator() == rhs.Numerator() && lhs.Denominator() == rhs.Denominator());
 };
 
+Rational operator+(const Rational& lhs, const Rational& rhs) {
+	return Rational(lhs.Numerator() * rhs.Denominator() + rhs.Numerator() * lhs.Denominator(),
+		lhs.Denominator() * rhs.Denominator());
+};
+
+Rational operator-(const Rational& lhs, const Rational& rhs) {
+	return Rational(lhs.Numerator() * rhs.Denominator() - rhs.Numerator() * lhs.Denominator(),
+		lhs.Denominator() * rhs.Denominator());
+};
+
+Rational operator*(const Rational& lhs, const Rational& rhs) {
+	return Rational(lhs.Numerator() * rhs.Numerator(), lhs.Denominator() * rhs.Denominator());
+};
+
+Rational operator/(const Rational& lhs, const Rational& rhs) {
+	if (rhs.Numerator() == 0) {
+		throw domain_error("Division by zero");
+	}
+	return Rational(lhs.Numerator() * rhs.Denominator(), lhs.Denominator() * rhs.Numerator());
+};
+
 ostream& operator<<(ostream& stream, const Rational& number) {
 	stream << number.Numerator() << "/" << number.Denominator();
 	return stream;
@@ -97,47 +123,32 @@ istream& operator>>(istream& stream, Rational& number) {
 	return stream;
 }
 
-
 int main() {
-	{
-		ostringstream output;
-		output << Rational(-6, 8);
-		if (output.str() != "-3/4") {
-			cout << "Rational(-6, 8) should be written as \"-3/4\"" << endl;
-			return 1;
+	//stringstream s;
+	//s << "4/5 / 0/8";
+
+	Rational a, b;
+	string oper;
+
+	try {
+		cin >> a >> oper >> b;
+
+		if (oper == "+") {
+			cout << a + b;
+		}
+		else if (oper == "-") {
+			cout << a - b;
+		}
+		else if (oper == "*") {
+			cout << a * b;
+		}
+		else {
+			cout << a / b;
 		}
 	}
-
-	{
-		istringstream input("5/7");
-		Rational r;
-		input >> r;
-		bool equal = r == Rational(5, 7);
-		if (!equal) {
-			cout << "5/7 is incorrectly read as " << r << endl;
-			return 2;
-		}
+	catch (exception& e) {
+		cout << e.what();
 	}
 
-	{
-		istringstream input("5/7 10/8");
-		Rational r1, r2;
-		input >> r1 >> r2;
-		bool correct = r1 == Rational(5, 7) && r2 == Rational(5, 4);
-		if (!correct) {
-			cout << "Multiple values are read incorrectly: " << r1 << " " << r2 << endl;
-			return 3;
-		}
-
-		input >> r1;
-		input >> r2;
-		correct = r1 == Rational(5, 7) && r2 == Rational(5, 4);
-		if (!correct) {
-			cout << "Read from empty stream shouldn't change arguments: " << r1 << " " << r2 << endl;
-			return 4;
-		}
-	}
-
-	cout << "OK" << endl;
 	return 0;
 }
