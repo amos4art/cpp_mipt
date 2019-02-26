@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2", "2", "{E5423D45-0AC0-4A
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BusStopDecomp", "2\BusStopDecomp\BusStopDecomp.vcxproj", "{F40D1A89-E878-4605-984B-BC15E1FF9DA0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GetDistinctRealRootCount", "2\GetDistinctRealRootCount\GetDistinctRealRootCount.vcxproj", "{D8C97313-1AF2-4918-BF81-F1F810216113}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -95,6 +97,14 @@ Global
 		{F40D1A89-E878-4605-984B-BC15E1FF9DA0}.Release|x64.Build.0 = Release|x64
 		{F40D1A89-E878-4605-984B-BC15E1FF9DA0}.Release|x86.ActiveCfg = Release|Win32
 		{F40D1A89-E878-4605-984B-BC15E1FF9DA0}.Release|x86.Build.0 = Release|Win32
+		{D8C97313-1AF2-4918-BF81-F1F810216113}.Debug|x64.ActiveCfg = Debug|x64
+		{D8C97313-1AF2-4918-BF81-F1F810216113}.Debug|x64.Build.0 = Debug|x64
+		{D8C97313-1AF2-4918-BF81-F1F810216113}.Debug|x86.ActiveCfg = Debug|Win32
+		{D8C97313-1AF2-4918-BF81-F1F810216113}.Debug|x86.Build.0 = Debug|Win32
+		{D8C97313-1AF2-4918-BF81-F1F810216113}.Release|x64.ActiveCfg = Release|x64
+		{D8C97313-1AF2-4918-BF81-F1F810216113}.Release|x64.Build.0 = Release|x64
+		{D8C97313-1AF2-4918-BF81-F1F810216113}.Release|x86.ActiveCfg = Release|Win32
+		{D8C97313-1AF2-4918-BF81-F1F810216113}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -108,6 +118,7 @@ Global
 		{793FBDF3-FE9B-4174-A699-AF4FFBF97D06} = {BE8EE07E-84BD-43B9-BB10-22F38FDDA850}
 		{DA9359D6-B4DC-4BED-90B9-2E7F10D18AA2} = {BE8EE07E-84BD-43B9-BB10-22F38FDDA850}
 		{F40D1A89-E878-4605-984B-BC15E1FF9DA0} = {E5423D45-0AC0-4A56-A0F0-EDA3216E2683}
+		{D8C97313-1AF2-4918-BF81-F1F810216113} = {E5423D45-0AC0-4A56-A0F0-EDA3216E2683}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5DFF1D15-3109-4E5B-9E12-720278D4677A}
