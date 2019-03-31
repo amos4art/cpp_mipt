@@ -49,6 +49,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SetPart", "4\SetPart\SetPar
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SplitWords", "4\SplitWords\SplitWords.vcxproj", "{AD80558E-D01A-41CC-8D47-75D15686DAD5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RemoveDuplicates", "4\RemoveDuplicates\RemoveDuplicates.vcxproj", "{BDF00A86-F12C-47A5-9D20-E603D172C927}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -209,6 +211,14 @@ Global
 		{AD80558E-D01A-41CC-8D47-75D15686DAD5}.Release|x64.Build.0 = Release|x64
 		{AD80558E-D01A-41CC-8D47-75D15686DAD5}.Release|x86.ActiveCfg = Release|Win32
 		{AD80558E-D01A-41CC-8D47-75D15686DAD5}.Release|x86.Build.0 = Release|Win32
+		{BDF00A86-F12C-47A5-9D20-E603D172C927}.Debug|x64.ActiveCfg = Debug|x64
+		{BDF00A86-F12C-47A5-9D20-E603D172C927}.Debug|x64.Build.0 = Debug|x64
+		{BDF00A86-F12C-47A5-9D20-E603D172C927}.Debug|x86.ActiveCfg = Debug|Win32
+		{BDF00A86-F12C-47A5-9D20-E603D172C927}.Debug|x86.Build.0 = Debug|Win32
+		{BDF00A86-F12C-47A5-9D20-E603D172C927}.Release|x64.ActiveCfg = Release|x64
+		{BDF00A86-F12C-47A5-9D20-E603D172C927}.Release|x64.Build.0 = Release|x64
+		{BDF00A86-F12C-47A5-9D20-E603D172C927}.Release|x86.ActiveCfg = Release|Win32
+		{BDF00A86-F12C-47A5-9D20-E603D172C927}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -233,6 +243,7 @@ Global
 		{6EB62FDA-E578-4EF6-8621-89E27DF07DA3} = {E2277D5C-B08A-4647-AD0E-E350622732B8}
 		{71CABA62-440B-49F4-A6E5-39F000B9CF14} = {E2277D5C-B08A-4647-AD0E-E350622732B8}
 		{AD80558E-D01A-41CC-8D47-75D15686DAD5} = {E2277D5C-B08A-4647-AD0E-E350622732B8}
+		{BDF00A86-F12C-47A5-9D20-E603D172C927} = {E2277D5C-B08A-4647-AD0E-E350622732B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5DFF1D15-3109-4E5B-9E12-720278D4677A}
