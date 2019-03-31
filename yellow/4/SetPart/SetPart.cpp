@@ -13,10 +13,17 @@ vector<T> FindGreaterElements(const set<T>& elements, const T& border) {
 
 	while (it != end(elements)) {
 		res.push_back(*it);
-		it++;
+		++it;
 	}
 
 	return res;
+
+
+	//auto it = begin(elements);
+	//while (it != end(elements) && *it <= border) {
+	//	++it;
+	//}
+	//return { it, end(elements) };
 }
 
 
