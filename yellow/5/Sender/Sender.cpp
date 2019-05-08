@@ -13,7 +13,7 @@ void SendEmail(const string& email, const string& message) {
 
 class INotifier {
 public:
-	virtual void Notify(const string& message) {}
+	virtual void Notify(const string& message) const = 0;
 };
 
 class SmsNotifier : public INotifier {
@@ -21,7 +21,7 @@ public:
 	SmsNotifier(const string& number) : _number(number) {
 	}
 
-	void Notify(const string& message) override {
+	void Notify(const string& message) const override {
 		SendSms(_number, message);
 	}
 
@@ -34,7 +34,7 @@ public:
 	EmailNotifier(const string& email) : _email(email) {
 	}
 
-	void Notify(const string& message) override {
+	void Notify(const string& message) const override {
 		SendEmail(_email, message);
 	}
 
