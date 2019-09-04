@@ -62,9 +62,7 @@ void AssertEqual(const T& t, const U& u, const std::string& hint = {}) {
 	}
 }
 
-void Assert(bool b, const std::string& hint) {
-	AssertEqual(b, true, hint);
-}
+void Assert(bool b, const std::string& hint);
 
 class TestRunner {
 public:
@@ -84,12 +82,7 @@ public:
 		}
 	}
 
-	~TestRunner() {
-		if (fail_count > 0) {
-			std::cerr << fail_count << " unit tests failed. Terminate" << std::endl;
-			exit(1);
-		}
-	}
+	~TestRunner();
 
 private:
 	int fail_count = 0;

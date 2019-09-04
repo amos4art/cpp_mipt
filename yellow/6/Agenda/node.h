@@ -1,6 +1,7 @@
 #pragma once
 
 #include "date.h"
+#include <memory>
 
 using namespace std;
 
@@ -52,7 +53,7 @@ private:
 
 class LogicalOperationNode : public Node {
 public:
-	LogicalOperationNode(const LogicalOperation& lo, shared_ptr<Node> left, shared_ptr<Node> right) : _lo(lo), _left(left), _right(right) {};
+	LogicalOperationNode(const LogicalOperation& lo, shared_ptr<Node> left, shared_ptr<Node> right);
 	bool Evaluate(const Date& date, const string& event) const override;
 private:	
 	shared_ptr<Node> _left;
@@ -115,7 +116,7 @@ bool ComparisonTemplate(const Comparison& cmp, const It& lhs, const It& rhs) {
 };
 
 template <typename It>
-bool LogicalOperationApply(const LogicalOperation& lo, const It& lhs, const It& rhs) {
+bool LogicalOperationTemplate(const LogicalOperation& lo, const It& lhs, const It& rhs) {
 	switch (lo) {
 		case LogicalOperation::And:
 			return lhs & rhs;

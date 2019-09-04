@@ -16,7 +16,13 @@ bool EventComparisonNode::Evaluate(const Date& date, const string& event) const 
 	//return _cmp(event, _event);
 }
 
+
+LogicalOperationNode::LogicalOperationNode(const LogicalOperation& lo, shared_ptr<Node> left, shared_ptr<Node> right) : _lo(lo) {
+	_left = left;
+	_right = right;
+}
+
 bool LogicalOperationNode::Evaluate(const Date& date, const string& event) const {
-	return LogicalOperationApply(_lo, _left->Evaluate(date, event), _right->Evaluate(date, event));
+	return LogicalOperationTemplate <bool> (_lo, _left->Evaluate(date, event), _right->Evaluate(date, event));
 	//return _lo(_left->Evaluate(date, event), _right->Evaluate(date, event));
 }
