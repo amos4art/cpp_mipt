@@ -1,12 +1,13 @@
 #include "student.h"
 #include "test_runner.h"
-
 #include <algorithm>
-//#include <chrono>
 
 using namespace std;
-//using namespace std::chrono;
-/*
+
+#ifdef TEST_BUILD
+#include <chrono>
+using namespace std::chrono;
+
 class LogDuration {
 public:
 	LogDuration() : start(steady_clock::now()) {
@@ -19,7 +20,7 @@ public:
 private:
 	steady_clock::time_point start;
 };
-*/
+#endif
 
 
 //Оптимизируйте эту функцию
@@ -28,7 +29,9 @@ bool Compare(const Student& first, const Student& second) {
 }
 
 void TestComparison() {
-	//LogDuration log;
+#ifdef TEST_BUILD
+	LogDuration log;
+#endif
 	
 	Student newbie {
     "Ivan", "Ivanov", {
@@ -60,7 +63,9 @@ void TestComparison() {
 }
 
 void TestSorting() {
-	//LogDuration log;
+#ifdef TEST_BUILD
+	LogDuration log;
+#endif
 	vector<Student> students {
     {"Sidor", "Sidorov", {{"maths", 2.}}, 2.},
     {"Semen", "Semenov", {{"maths", 4.}}, 4.},

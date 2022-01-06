@@ -6,7 +6,7 @@
 using namespace std;
 
 class Learner {
- private:
+private:
   set<string> dict;
 
 public:

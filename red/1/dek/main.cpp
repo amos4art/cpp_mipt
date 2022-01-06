@@ -1,4 +1,8 @@
-//#include "test_runner.h"
+
+#ifdef TEST_BUILD
+#include "test_runner.h"
+#endif
+
 #include <vector>
 #include <stdexcept>
 
@@ -111,7 +115,7 @@ private:
 	vector<T> m_front, m_back;
 };
 
-/*
+#ifdef TEST_BUILD
 void TestDeque() {
 	Deque<int> d;	
 	d.PushFront(5);
@@ -145,9 +149,9 @@ int main() {
 	RUN_TEST(tr, TestDeque);
 	return 0;
 }
-*/
-
+#else
 
 int main() {
 	return 0;
 }
+#endif

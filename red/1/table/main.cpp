@@ -18,8 +18,8 @@ public:
 		return m_table[ind];
 	}
 
-	const Table& operator[](size_t v) const {
-		return m_table[v];
+	const vector<T>& operator[](size_t ind) const {
+		return m_table[ind];
 	}
 
 	void Resize(const size_t& new_h, const size_t& new_w){
@@ -32,7 +32,12 @@ public:
 	}
 
 	pair<size_t, size_t> Size() const {
-		return { m_h, m_w };
+		if (m_h == 0 || m_w == 0) {
+			return { 0, 0 };
+		}
+		else {
+			return { m_h, m_w };
+		}
 	}
 
 private:
